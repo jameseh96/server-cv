@@ -10,5 +10,5 @@ TESTS_EXCLUDE="memcached-spdlogger-test"
 
 // Disable magma support - we don't ship with it in mad-hatter and it is
 // currently failing on macOS XCode 9.3
-CMAKE_ARGS="-DEP_USE_MAGMA=0"
+CMAKE_ARGS="${CMAKE_ARGS} " + "-DEP_USE_MAGMA=0"
 }
